@@ -79,7 +79,7 @@ DEPLOYMENT
   - Please go to the GitHub respository and then to the Settings tab
   - Select the drop down menu for source selection and then Master Branch
   - A link to the completed will be found once main branch is selected.
-  - The link can be accessed here: https://aman6754.github.io/royaloakfoods/index.html
+  - The link can be accessed here: (https://aman6754.github.io/royaloakfoods/)
 
 CREDITS
 -CONTENT
