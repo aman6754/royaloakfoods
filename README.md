@@ -84,6 +84,7 @@ DEPLOYMENT
 CREDITS
 -CONTENT
   -The code to create the social media links were taken from CI Love Running Project
+  -Websites such as Asha's, Soho Tavern, Tipu Sultan gave me ideas on designs I wanted to implement and the type of menu the restaurant would provide
 
 MEDIA
 - The images for my project were taken from Rawpixel
