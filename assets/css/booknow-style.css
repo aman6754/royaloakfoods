@@ -1,0 +1,52 @@
+/* booknow-style.css */
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf3e0; /* Light beige background */
+    color: #251c12; /* Dark brown text */
+}
+
+header {
+    background-color: #b48963; /* Brown header background */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header a {
+    color: #ffdd57; /* Yellow for links */
+    text-decoration: none;
+}
+
+main {
+    margin: 2rem auto;
+    padding: 0 2rem;
+    max-width: 800px;
+}
+
+h2 {
+    color: #1b160e; /* Dark brown for section headers */
+    border-bottom: 2px solid #8b572a; /* Brown border */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    border-bottom: 1px solid #ccc; /* Light grey borders for list items */
+    padding: 0.5rem 0;
+    margin: 0.5rem 0;
+}
+
+.cover-image {
+    width: 100%;
+    max-height: 150px; /* Adjust the height as needed */
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
