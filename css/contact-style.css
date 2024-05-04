@@ -1,0 +1,105 @@
+/* contact-style.css */
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    color: #251c12; /* Dark brown for text */
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    border-right: 2px solid #251c12; /* Dark brown separation line */
+}
+
+.contact-form {
+    max-width: 500px;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 20px; /* Space between image and form */
+    background-color: #faf3e0; /* Light beige background like the index */
+}
+
+.contact-form h2 {
+    color: #5d3a00; /* Brown shade for headers */
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: .5rem;
+    color: #251c12; /* Dark brown for text */
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* White input backgrounds */
+    color: #251c12; /* Dark brown for input text */
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical; /* Allow only vertical resizing */
+}
+
+.contact-button {
+    background-color: #8b572a; /* Brown shade for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.contact-button:hover {
+    background-color: #7d4f24; /* Slightly darker brown on hover */
+}
+
+.contact-info p,
+.contact-info a {
+    margin: .5rem 0;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fa-facebook { color: #3b5998; }
+.fa-instagram { color: #e4405f; }
+.fa-twitter { color: #55acee; }
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-image,
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-image img {
+        margin-bottom: 1rem;
+    }
+}
