@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submission Confirmation - Royal Oak</title>
+    <link rel="stylesheet" href="css/signup-style.css">
+    <style>
+        /* Additional styles for the submission page */
+        body {
+            font-family: 'Mulish', sans-serif;
+            background-color: #faf3e0; /* Same light beige background */
+            margin: 0;
+        }
+        .hero {
+            position: relative;
+            height: 400px;
+            background: url('images/chicken-tikka-masala.jpg') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+        }
+        .hero-text h1, .hero-text p {
+            margin: 0;
+            color: #8b572a; /* Same brown color */
+        }
+        .submission-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Royal Oak Restaurant</h1>
+            <p>Bringing a taste of Northern Indian cuisine to Shropshire</p>
+        </div>
+    </div>
+    <main class="submission-container">
+        <h2>Thank you for signing up!</h2>
+        <p>Here is the data you submitted:</p>
+        <table>
+            <tr><th>First Name</th><td id="first-name"></td></tr>
+            <tr><th>Last Name</th><td id="last-name"></td></tr>
+            <tr><th>Email</th><td id="email"></td></tr>
+            <tr><th>Password</th><td id="password"></td></tr>
+            <tr><th>Confirm Password</th><td id="confirm-password"></td></tr>
+            <tr><th>Terms Accepted</th><td id="terms"></td></tr>
+        </table>
+    </main>
+<script>
+    // Extract URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const fields = ['first-name', 'last-name', 'email', 'password', 'confirm-password', 'terms'];
+    fields.forEach(field => {
+        document.getElementById(field).textContent = urlParams.get(field) || 'Not provided';
+    });
+</script>
+</body>
+</html>
